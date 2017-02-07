@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/slak"
+        android:id="@+id/next_article_img"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        android:text="Mytexte is here nigga Mytexte is here nigga Mytexte is here nigga"
+        android:layout_toEndOf="@id/next_article_img"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textSize="7sp"
+        android:textStyle="bold"
+        android:id="@+id/next_article_title"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+        android:layout_below="@id/next_article_title"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/next_article_img"
+        android:layout_marginLeft="10dp"
+        android:textSize="6sp"
+        android:id="@+id/next_article_contenu"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="17dp"
+        android:text="12/12/2017 12h:11"
+        android:layout_toEndOf="@id/next_article_img"
+        android:layout_marginLeft="10dp"
+        android:textSize="9sp"
+
+        android:textColor="#eb0164"
+        android:layout_below="@+id/next_article_contenu"
+        android:id="@+id/next_article_date"
+        />
+
+</RelativeLayout>

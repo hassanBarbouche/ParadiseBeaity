@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/back1"
+    android:layout_height="match_parent">
+
+
+
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/waveLoadingView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:wlv_borderColor="#ff1748"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="40"
+        app:wlv_shapeType="circle"
+        app:wlv_round_rectangle="true"
+        app:wlv_triangle_direction="north"
+
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleCenter=""
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="15sp"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="#ff1748"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chargement des News"
+        android:layout_below="@id/waveLoadingView"
+        android:textColor="#FFF"
+        android:id="@+id/cht"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinon vérifier votre connexion internet"
+        android:layout_below="@id/cht"
+        android:textSize="10sp"
+        android:id="@+id/nocon"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:id="@+id/RechergerBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/recharge"
+        android:layout_below="@id/nocon"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/maquillage_news_icon"
+        android:layout_above="@+id/nocon"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

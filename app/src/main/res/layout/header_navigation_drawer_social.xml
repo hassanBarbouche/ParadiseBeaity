@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:flatui="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/header_navigation_drawer_social_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="slakiii"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slak2" />
+
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_navigation_drawer_social_image"
+        android:background="#ff1748" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+
+        android:id="@+id/waveLoadingView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="25dp"
+        app:wlv_borderColor="#ff1748"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="70"
+        app:wlv_shapeType="circle"
+        app:wlv_round_rectangle="true"
+        app:wlv_triangle_direction="north"
+
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleCenter=""
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="15sp"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="#ff1748"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maquillage_news_icon"
+        android:layout_marginLeft="7dp"
+        android:id="@+id/logo"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/waveLoadingView" />
+
+</RelativeLayout>

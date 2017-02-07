@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beauty.android.com.paradisebeaity.ArticleListActivity"
+    android:background="#fff">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="263dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/slak"
+                android:scaleType="centerCrop"
+                android:id="@+id/produit_image"/>
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/produit_titre"
+                android:layout_marginRight="25dp"
+                android:text="Double Face !"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@+id/produit_image"
+                android:layout_alignStart="@+id/produit_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Prix : "
+                android:layout_marginLeft="32dp"
+                android:layout_alignStart="@+id/produit_image"
+                android:id="@+id/produit_prixtxt"
+                android:layout_below="@+id/produit_titre" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32€"
+                android:layout_toEndOf="@+id/produit_prixtxt"
+                android:textColor="#ff9a0a"
+                android:textStyle="bold"
+
+                android:id="@+id/produit_prix"
+                android:layout_below="@+id/produit_titre" />
+
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/produit_prix"
+                android:layout_marginRight="30dp"
+                android:id="@+id/produit_text"
+                android:layout_marginLeft="30dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolorUt enim ad minim veniam, quis nostrudLorem ipsum dolorUt enim ad minim veniam, quis nostrudLorem  "
+                android:layout_alignLeft="@id/produit_image"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_alignEnd="@+id/produit_image" />
+
+            <fragment
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:id="@+id/youtube_view"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/produit_text"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noter_txt"
+                android:layout_marginRight="25dp"
+                android:text="Notez ce produit :"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:textSize="11sp"
+
+                android:layout_below="@+id/youtube_view"
+                android:layout_alignParentRight="true" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noter_txt"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:stepSize="1"
+                android:theme="@style/RatingBar"
+                android:id="@+id/ratingBar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/ratingBar"
+                android:layout_alignParentRight="true"
+                android:text="Noter"
+                android:id="@+id/noterBtn"
+                android:background="#ff1748"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nb1"
+                android:textColor="#5d5d5d"
+                android:layout_marginRight="10dp"
+                android:text="Une fois que vous avez noté un produit vous ne pouvez plus changer de note"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="7dp"
+                android:textSize="8sp"
+
+                android:layout_below="@+id/noterBtn"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nb2"
+                android:textColor="#5d5d5d"
+                android:layout_marginRight="10dp"
+                android:text="Les notes attribuées aux produits sont anonymes"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:textSize="6sp"
+
+                android:layout_below="@+id/nb1"
+                android:layout_alignParentRight="true" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/nb2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/5"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:id="@+id/Notesur"
+
+                android:layout_alignBottom="@+id/ratingBar"
+                android:layout_toStartOf="@id/ratingBar"
+
+
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,5"
+                android:textStyle="bold"
+                android:textSize="45sp"
+                android:textColor="#ff9a0a"
+                android:id="@+id/Note"
+                android:layout_alignBaseline="@+id/Notesur"
+                android:layout_alignBottom="@+id/Notesur"
+                android:layout_toStartOf="@+id/Notesur" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

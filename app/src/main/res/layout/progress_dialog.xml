@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+
+
+        android:layout_centerHorizontal="true">
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+
+        android:id="@+id/waveLoadingView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="13dp"
+        app:wlv_borderColor="#ff1748"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="40"
+        app:wlv_shapeType="circle"
+        app:wlv_round_rectangle="true"
+        app:wlv_triangle_direction="north"
+
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleCenter=""
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="15sp"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="#ff1748"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chargement des données..."
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/waveLoadingView"
+            android:textColor="#FFF"
+            android:id="@+id/cht"
+            android:layout_marginLeft="25dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veuillez attendre un petit instant SVP"
+            android:textSize="10sp"
+            android:id="@+id/nocon"
+
+            android:layout_below="@+id/cht"
+            android:layout_toEndOf="@+id/waveLoadingView"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="45dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

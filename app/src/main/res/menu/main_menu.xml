@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Main">
+
+
+    <item
+        android:id="@+id/ArticleBtn"
+        android:title="Notif"
+        android:icon="@drawable/articles_menue"
+        android:orderInCategory="101"
+        app:showAsAction="always|withText" />
+
+
+    <item
+        android:id="@+id/NewsBtn"
+        android:title="TLS"
+        android:icon="@drawable/news_menue"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/ProduitBtn"
+        android:title="TLS"
+        android:icon="@drawable/produit_menue"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+
+</menu>

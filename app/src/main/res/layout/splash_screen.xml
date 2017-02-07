@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <include layout="@layout/my_video_background" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+
+        android:id="@+id/waveLoadingView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="71dp"
+        app:wlv_borderColor="#ff1748"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="70"
+        app:wlv_shapeType="circle"
+        app:wlv_round_rectangle="true"
+        app:wlv_triangle_direction="north"
+
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_titleCenter=""
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="15sp"
+        app:wlv_waveAmplitude="70"
+        app:wlv_waveColor="#ff1748"
+        android:layout_marginEnd="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/rel"
+        android:layout_marginRight="3dp"
+        android:layout_alignBottom="@+id/waveLoadingView"
+        android:layout_alignEnd="@+id/waveLoadingView">
+
+        <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv"
+        android:text="Entrez"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+        android:visibility="invisible"
+ />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/passBtn"/>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maquillage_news_icon"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/logo"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conseils, Tutoriels, Articles"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:id="@+id/txt1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rel"
+        android:layout_alignEnd="@+id/waveLoadingView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visitez notre page sur Facebook et Youtube"
+        android:textSize="8sp"
+        android:id="@+id/txt2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txt1"
+        android:layout_alignEnd="@+id/waveLoadingView" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:src="@drawable/maquillage_news_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true"
+         />
+
+
+</RelativeLayout>

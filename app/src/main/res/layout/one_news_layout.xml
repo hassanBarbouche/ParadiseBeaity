@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beauty.android.com.paradisebeaity.ArticleListActivity"
+    android:background="#fff">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="263dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/slak"
+                android:scaleType="centerCrop"
+                android:id="@+id/produit_image"/>
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/produit_titre"
+                android:text="Double Face !"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="11dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@+id/produit_image"
+                android:layout_alignStart="@+id/produit_image" />
+
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/produit_titre"
+                android:id="@+id/news_date"
+                android:text="11/12/2017 18h30"
+                android:layout_marginLeft="30dp"
+                android:layout_alignLeft="@id/produit_image"
+                android:textStyle="italic"
+                android:textSize="10sp"
+                android:textColor="#ff1748"
+                />
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_date"
+                android:id="@+id/produit_text"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolorUt enim ad minim veniam, quis nostrudLorem ipsum dolorUt enim ad minim veniam, quis nostrudLorem  "
+                android:layout_alignLeft="@id/produit_image"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_alignEnd="@+id/produit_image" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/produit_text"
+                android:layout_marginTop="25dp"
+                android:id="@+id/photo2"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo2"
+                android:text="Source"
+                android:textStyle="bold"
+                android:textColor="#ff1748"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/src_txt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/src_txt"
+                android:text="Magazine Elle"
+                android:textSize="10sp"
+
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:id="@+id/news_source"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/news_source"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

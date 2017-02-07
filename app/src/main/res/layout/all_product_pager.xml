@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="#fff">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.gigamole.navigationtabstrip.NavigationTabStrip
+                android:id="@+id/nts_center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:nts_active_color="#000"
+                app:nts_color="#ff1748"
+                app:nts_factor="2.8"
+                app:nts_corners_radius="1.5dp"
+                app:nts_inactive_color="#000"
+                app:nts_titles="@array/titles"
+                app:nts_size="10sp"
+                app:nts_weight="3dp"/>
+
+
+
+        <android.support.v4.view.ViewPager
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/PagerW">
+
+
+
+
+        </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+        <include
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            layout="@layout/list_view_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beauty.android.com.paradisebeaity.ArticleListActivity"
+    android:background="#fff">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/slak"
+        android:scaleType="centerCrop"
+        android:id="@+id/produit_image"/>
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/produit_titre"
+                android:layout_marginRight="25dp"
+                android:text="Double Face !"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_below="@+id/produit_image"
+                android:layout_alignStart="@+id/produit_image" />
+
+
+            <TextView
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/produit_titre"
+        android:id="@+id/news_date"
+       android:text="11/12/2017 18h30"
+                android:layout_marginLeft="30dp"
+        android:layout_alignLeft="@id/produit_image"
+       android:textStyle="italic"
+        android:textSize="13sp"
+        android:textColor="#ff1748"
+        />
+
+    <TextView
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_date"
+        android:id="@+id/produit_text"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudLorem ipsum dolorUt enim ad minim veniam, quis nostrudLorem ipsum dolorUt enim ad minim veniam, quis nostrudLorem  "
+        android:layout_alignLeft="@id/produit_image"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_alignEnd="@+id/produit_image" />
+
+            <fragment
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:id="@+id/youtube_view"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/produit_text"/>
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/youtube_view"
+                android:layout_marginRight="30dp"
+                android:id="@+id/produit_text2"
+                android:layout_marginLeft="30dp"
+                android:layout_alignLeft="@id/produit_image"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_alignEnd="@+id/produit_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Article rédigé par :"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/produit_text2"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/redig"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marwa Trad Ftis"
+               android:textSize="10sp"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/redig"
+                android:layout_marginRight="50dp"
+                android:id="@+id/article_author"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Le 22 Janvier 2017"
+                android:textSize="7sp"
+                android:textStyle="italic"
+                android:layout_marginTop="3dp"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/article_author"
+                android:layout_marginRight="50dp"
+
+
+                />
+
+
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/slak"
+                android:layout_below="@id/produit_text2"
+                android:layout_toLeftOf="@+id/redig"
+                android:layout_marginRight="10dp"
+                android:id="@+id/Authorimg"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:src="@drawable/avoiraussi3"
+                android:id="@+id/avoiraussi"
+                 android:layout_marginLeft="5dp"
+                android:layout_below="@+id/Authorimg"/>
+
+            <GridView
+
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:id="@+id/autreList"
+                android:numColumns="2"
+
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="4dp"
+                android:layout_below="@+id/avoiraussi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical"
+
+                ></GridView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avez vous aimez cet article ?"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_below="@+id/autreList"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/avezvous"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donnez nous votre avis à propo de cet article"
+                android:textColor="#000"
+                android:textSize="9sp"
+                android:layout_below="@+id/avezvous"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+
+                android:id="@+id/donner"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="Yes (763)"
+                android:background="#00a01a"
+                android:textColor="#FFF"
+                android:layout_below="@+id/donner"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnyes"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="No (188)"
+                android:background="#dc0000"
+                android:textColor="#FFF"
+                android:layout_below="@+id/donner"
+                android:layout_toLeftOf="@id/btnyes"
+
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnno"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/btnyes"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>

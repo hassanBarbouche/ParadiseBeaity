@@ -1,0 +1,30 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+
+    <style name="AppThemeBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- set the size of action bar title . -->
+        <item name="android:textSize">6sp</item>
+    </style>
+
+    <style name="ListViewStyle_emna">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlActivated">#ff1748</item>
+        <item name="colorControlNormal">#5d5d5d</item>
+    </style>
+
+
+
+</resources>

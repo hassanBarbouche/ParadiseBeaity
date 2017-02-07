@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beauty.android.com.paradisebeaity.ArticleListActivity"
+    android:background="#fff">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/ImageNewsPager"
+
+        android:layout_below="@id/toolbar">
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/titles"
+        android:layout_height="10dp"
+        android:background="#ff1748"
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/ImageNewsPager"
+        />
+
+    <com.gigamole.navigationtabstrip.NavigationTabStrip
+        android:id="@+id/nts_center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/titles"
+        app:nts_active_color="#ff1748"
+        app:nts_color="#ff1748"
+        app:nts_factor="2.8"
+        app:nts_corners_radius="1.5dp"
+        app:nts_inactive_color="#000"
+        app:nts_titles="@array/titles_news"
+        app:nts_typeface="fonts/drugs.otf"
+        app:nts_size="10sp"
+        app:nts_weight="3dp"/>
+
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/list_news"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/nts_center">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/list_news"/>
+
+
+    </RelativeLayout>

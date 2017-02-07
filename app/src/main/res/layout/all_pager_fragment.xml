@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:id="@+id/reshh">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Recherche Avancée"
+            android:background="@android:color/transparent"
+            android:id="@+id/RecherchetToggle"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/UporDown"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/down2"
+            android:layout_toEndOf="@id/RecherchetToggle"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/relative1"
+
+
+        app:ael_expanded="false"
+        app:ael_duration="200"
+
+        app:ael_interpolator="bounce"
+        app:ael_orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#000">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="15dp"
+            android:id="@+id/line1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:id="@+id/RechercheTxt"
+            android:backgroundTint="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp">
+            <EditText android:id="@+id/RechercheEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:hint="Recherche"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Rechercher"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/RechercheBTN"
+            android:textSize="10sp"
+            android:layout_marginRight="8dp"
+            android:background="#ff1748"
+
+
+
+             />
+
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CheckLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/line1">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Peau Mixte"
+            android:id="@+id/peau_mixte"
+            android:textSize="8sp"
+            android:buttonTint="#ff1748"
+
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            />
+
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/peau_normal"
+
+                android:layout_toEndOf="@+id/peau_mixte"
+                android:text="Peau Normale"
+                android:textSize="8sp"
+                android:buttonTint="#ff1748"
+
+
+                />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/peau_grasse"
+
+            android:layout_toEndOf="@+id/peau_normal"
+            android:text="Peau Grasse"
+            android:textSize="8sp"
+            android:buttonTint="#ff1748"
+
+
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/peau_seche"
+
+            android:layout_toEndOf="@+id/peau_grasse"
+            android:text="Peau Séche"
+            android:textSize="8sp"
+            android:buttonTint="#ff1748"
+
+
+            />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/noprod"
+            android:visibility="invisible"
+            android:src="@drawable/noproduct"/>
+
+    <com.etsy.android.grid.StaggeredGridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:item_margin="8dp"
+        app:column_count="2" />
+
+    </RelativeLayout>
+
+</LinearLayout>

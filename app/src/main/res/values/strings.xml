@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Maquillage News</string>
+    <string name="action_settings">Settings</string>
+    <string name="player_error">Error initializing YouTube player</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="banner_admob_unit_id">ca-app-pub-3470589097458386/7230825953</string>
+    <string name="testDeviceID">6BA3752AF66F8D8553248A71886E648D</string>
+    <string name="test_admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="test_admob_express_unit_id">ca-app-pub-3940256099942544/1072772517</string>
+    <string name="admob_interstitial_id">ca-app-pub-3470589097458386/3160553159</string>
+    <string name="banner2">ca-app-pub-3470589097458386/7185296753</string>
+
+</resources>
